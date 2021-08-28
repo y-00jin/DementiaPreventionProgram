@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calc1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/calc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/textNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="숫자1"/>
+
+        <TextView
+            android:id="@+id/textOp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="op"/>
+
+        <TextView
+            android:id="@+id/textNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="숫자2"/>
+
+        <Button
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CEF279"
+            android:textColor="#353535"
+            android:layout_margin="5dp"
+            android:onClick="onBtnQuestion"
+            android:text="문제" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calc3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:hint="정답을 입력하세요"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFE400"
+            android:textColor="#353535"
+            android:layout_margin="5dp"
+            android:onClick="onBtnAnswer"
+            android:text="정답"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="그리면서 문제를 풀어보세요 *^^*" />
+
+
+    <com.example.project.CalcView
+        android:id="@+id/drawCalc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        />
+
+
+    <LinearLayout
+
+        android:id="@+id/Calc4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:prompt="@string/color_prompt" />
+
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CEF279"
+            android:textColor="#353535"
+            android:onClick="onBtnRemove"
+            android:layout_margin="5dp"
+            android:text="지우기" />
+
+        <Button
+            android:id="@+id/btnAllReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CEF279"
+            android:textColor="#353535"
+            android:onClick="onBtnRemoveAll"
+            android:layout_margin="5dp"
+            android:text="모두 지우기" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:text="한번 클릭 : 지우개 / 한번 더 클릭 : 지우개 해제" />
+</LinearLayout>

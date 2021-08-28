@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">치매 예방 앱</string>
+    <string name="CircleColor">색상 :</string>
+    <string name="ColorRed">빨간색</string>
+    <string name="ColorBlue">파란색</string>
+    <string name="BtnClick">그리기</string>
+
+    <string name="color_prompt">선 색상을 선택하시오</string>
+    <string-array name="color_array">
+        <item>검은색</item>
+        <item>빨간색</item>
+        <item>파란색</item>
+        <item>초록색</item>
+        <item>분홍색</item>
+    </string-array>
+
+</resources>

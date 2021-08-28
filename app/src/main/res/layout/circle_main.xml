@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Circle1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/Circle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tx1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="@string/CircleColor" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:onClick="onRadioBtnClicked"
+                android:text="@string/ColorRed" />
+
+            <RadioButton
+                android:id="@+id/radio_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0100FF"
+                android:onClick="onRadioBtnClicked"
+                android:text="@string/ColorBlue" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CEF279"
+            android:textColor="#353535"
+            android:layout_margin="3dp"
+            android:onClick="redraw"
+            android:text="@string/BtnClick" />
+
+
+
+    </LinearLayout>
+
+    <TableLayout android:id="@+id/table1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow android:id="@+id/row1">
+
+            <Button android:id="@+id/n1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFE400"
+                android:textColor="#353535"
+                android:onClick="sendMessage"
+                android:text="1" />
+
+            <Button android:id="@+id/n2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFE400"
+                android:textColor="#353535"
+                android:onClick="sendMessage"
+                android:text="2" />
+
+            <Button android:id="@+id/n3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFE400"
+                android:textColor="#353535"
+                android:onClick="sendMessage"
+                android:text="3" />
+
+            <Button android:id="@+id/n4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFE400"
+                android:textColor="#353535"
+                android:onClick="sendMessage"
+                android:text="4" />
+
+            <Button android:id="@+id/n5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFE400"
+                android:textColor="#353535"
+                android:onClick="sendMessage"
+                android:text="5" />
+        </TableRow>
+
+        <TableRow android:id="@+id/row2">
+
+            <Button android:id="@+id/n6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFE400"
+                android:textColor="#353535"
+                android:onClick="sendMessage"
+                android:text="6" />
+
+            <Button android:id="@+id/n7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFE400"
+                android:textColor="#353535"
+                android:onClick="sendMessage"
+                android:text="7" />
+
+            <Button android:id="@+id/n8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFE400"
+                android:textColor="#353535"
+                android:onClick="sendMessage"
+                android:text="8" />
+
+            <Button android:id="@+id/n9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFE400"
+                android:textColor="#353535"
+                android:onClick="sendMessage"
+                android:text="9" />
+
+            <Button android:id="@+id/n10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFE400"
+                android:textColor="#353535"
+                android:onClick="sendMessage"
+                android:text="10" />
+        </TableRow>
+
+
+    </TableLayout>
+
+        <view
+            android:id="@+id/circleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.example.project.CircleView"/>
+
+
+
+</LinearLayout>

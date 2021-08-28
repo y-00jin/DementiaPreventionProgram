@@ -1,0 +1,66 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/LinearLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#030066"
+        android:gravity="center"
+        android:typeface="monospace"
+
+        android:shadowRadius="7.0"
+        android:shadowDx="7.0"
+        android:shadowDy="7.0"
+        android:shadowColor="#4C4C4C"
+
+        android:layout_alignParentTop="true"
+
+        android:text="치매 예방 앱" />
+
+
+
+    <Button
+        android:id="@+id/btnCircle"
+        android:layout_below="@id/TextViewMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:backgroundTint="#CEF279"
+        android:textColor="#353535"
+        android:padding="10dp"
+        android:onClick="onBtnClicked"
+        android:text="원 개수 맞추기"
+        />
+
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_below="@id/btnCircle"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:backgroundTint="#CEF279"
+        android:textColor="#353535"
+        android:padding="10dp"
+        android:onClick="onBtnClicked"
+        android:text="계산 연습"
+        />
+
+
+
+
+</RelativeLayout>
+
+
