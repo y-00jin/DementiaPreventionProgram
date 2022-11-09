@@ -18,14 +18,6 @@
 
 <br/>
 
-### 🌐 프로젝트 구성
-- 메뉴 구조
-
-<br/>
-
-- 데이터베이스 설계 <br/>
-
-
 <br/>
 
 ### 👀 Language & Tools
@@ -38,17 +30,21 @@
 ### 🍀 Result
 
 <br/>
-- 메인
+
+- 메인 <br/>
+
 ![메인화면](https://user-images.githubusercontent.com/81798918/200767750-a74844bd-d6b7-4c2e-97c2-81d64c12817f.JPG)
 
 <br/>
 
-- 개수 맞추기
+- 개수 맞추기 <br/>
+
 ![개수 맞추기](https://user-images.githubusercontent.com/81798918/200767669-d5ad0aca-3a0e-422e-bd6d-ba3917be7ddb.JPG)
 
 <br/>
 
-- 계산 연습
+- 계산 연습 <br/>
+
 ![계산연습1](https://user-images.githubusercontent.com/81798918/200767831-19526b88-3f34-43c3-be40-fd882226ecbb.JPG)
 
 <br/>
