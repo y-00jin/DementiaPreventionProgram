@@ -56,3 +56,10 @@
 - 실행 영상
 
 
+
+https://user-images.githubusercontent.com/81798918/201179267-0f8343a1-efac-47d1-9eb5-7e2f7118b94a.mp4
+
+
+
+
+
